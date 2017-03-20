@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Simple script to start the GUI in Ubuntu. The startx
+# command starts X Windows System but not Unity. This
+# script uses systemd to start Unity too.
+
+# To run: sudo ./start_gui
+/bin/systemctl start graphical.target

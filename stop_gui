@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Simple script to stop the GUI in Ubuntu and go back
+# to a simple console window. The chvt command is used
+# to make sure we go back to tty1.
+
+# To run: sudo .stop_gui
+/bin/chvt 1 && /bin/systemctl isolate multi-user.target
